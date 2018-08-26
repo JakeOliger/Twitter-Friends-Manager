@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #141d26;
+  color: #FFF;
+}
+
+.visible { visibility: visible; }
+.invisible { visibility: hidden; }
+
+#friends-component-container {
+  position: relative;
+}
+
+.friends {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+}
+
+.friend {
+  flex: 1 1 auto;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  background-color: #1b2836;
+  margin: 5px;
+  padding: 10px 10px 40px 10px;
+  width: 30%;
+  height: 85px;
+}
+
+.friend p {
+  margin: 0;
+  padding: 0;
+}
+
+.friend img {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.friend .name {
+  font-weight: 700;
+}
+
+.friend .handle {
+  display: inline-block;
+  color: #999;
+  font-size: 10px;
+  background-color: #141d26;
+  padding: 3px;
+  border-radius: 3px;
+  margin-left: 10px;
+  position: relative;
+  bottom: 2px;
+  text-decoration: none;
+}
+
+.friend .handle:hover { text-decoration: underline; }
+
+.friend .bio {
+  font-size: 12px;
+  line-height: 1.5em;
+  min-height: 2em;
+}
+
+.friend .roles {
+  position: absolute;
+  bottom: 10px;
+}
+
+.friend button {
+  margin-right: 2px;
+  cursor: pointer;
+}
+
+.friend button.not-pressed {
+  opacity: 0.25;
+}
+
+button.button {
+  margin: 0 5px;
+  border-radius: 100px;
+  padding: 6px 16px;
+  background-color: transparent;
+  color: #8899a6;
+  font-size: 12px;
+  font-weight: 700;
+  height: 28px;
+  border: 1px solid #8899a6;
+  cursor: pointer;
+  transition: 0.15s;
+  outline: none;
+}
+
+button.button:hover {
+  background-color: rgba(136, 153, 166, 0.2);
+}
+
+.button.role {
+  padding: 3px 8px;
+  font-size: 11px;
+  color: #FFF;
+  border-color: #FFF;
+}
+
+.friends-controls {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.horizontal-separator {
+  height: 25px;
+  width: 1px;
+  background-color: #354f6b;
+  margin: 0 25px;
+}
+
+#json-container,
+#settings-container {
+  display: flex;
+  position: fixed;
+  top: 10%;
+  right: 10%;
+  bottom: 10%;
+  left: 10%;
+  background-color: rgba(36, 52, 71, 0.95);
+  border-radius: 2em;
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+#json {
+  flex: 1 1 auto;
+  width: 100%;
+  height: 100%;
+}
+
+.close-button {
+  width: 24px;
+  height: 24px;
+  background-image: url('./close.png');
+  background-size: 24px 24px;
+  cursor: pointer;
+}
+
+.modal .close-button {
+  position: absolute;
+  top: 13px;
+  right: 50px;
+}

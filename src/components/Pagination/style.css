@@ -1,0 +1,18 @@
+.pagination {
+  margin: 5px 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination.block {
+  display: flex;
+}
+
+.pagination .button:first-child {
+  margin-right: 20px;
+}
+
+.pagination .button:last-child {
+  margin-left: 20px;
+}

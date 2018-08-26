@@ -1,0 +1,26 @@
+#settings-container {
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  bottom: initial;
+}
+
+#settings-container .category-row {
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#settings-container .category-row input:last-child {
+  flex: 0 1 85%;
+}
+
+#settings-container .category-row .close-button {
+  position: inherit;
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
